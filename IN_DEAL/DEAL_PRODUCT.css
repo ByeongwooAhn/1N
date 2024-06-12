@@ -1,0 +1,154 @@
+/* 기본 폼 */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .test {
+    height: 80px;
+   }
+  
+  .container {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: fixed;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  #intro {
+    width: 100;
+    height: 80px;
+  }
+  
+  #intro h1 {
+    font-size: 50px;
+    float: left;
+    width: 100px;
+    height: 80px;
+    color: white;
+    margin-left: 20px;
+    line-height: 80px;
+  }
+  
+  #intro h1 a {
+    font-size: 30px;
+  }
+  
+  #intro nav ul li {
+   width: 5%;
+   height: 80px;
+   float: right;
+   text-align: center;
+   Line-height: 80px;
+   margin-right: 20px;
+  }
+  
+  #intro nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /*---------카테고리 CSS------------*/
+  
+  .category {
+    width: 40%;
+    height: 80px;
+    margin-left: 30%;
+  }
+  
+  .menu {
+    width: 20%;
+    height: 80px;
+    float: left;
+    margin-left: 4%;
+    line-height: 80px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  
+  .menu:hover #sub {
+    display: block;
+  }
+  
+  .menu a {
+    color: inherit;
+  }
+  
+  #sub {
+    margin-top: 0;
+    font-size: 15px;
+    background-color: rgb(252, 252, 252);
+    display: none;
+    
+  }
+  
+  #sub li {
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+   /*---------------------------------------*/
+
+   .product_form {
+    display: inline-block;
+    border: solid 1px rgb(217, 217, 217);;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+   }
+
+  img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .product_img {
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+    float: left;
+  }
+
+  .product_infor {
+    float: right;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    border-left: solid 1px rgb(217, 217, 217);
+    
+  }
+
+  .product_infor_text {
+    margin: 5%;
+  }
+
+  .product_form .product_infor li {
+    list-style: none;
+  }
+
+  .product_title {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+  }
+
+  .product_price {
+    font-weight: bolder;
+    text-align: right;
+    color: rgb(197, 2, 2);
+    font-size: 30px;
+  }

@@ -1,0 +1,22 @@
+.star-rating {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.star.selected {
+    color: #ff9800;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: #ff9800;
+}
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOU'RE ALONE?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header id="intro">
+          <h1 onclick="location.href='../IN_MAIN.html'">1N</h1>
+            <nav>
+              <ul>
+                <li class="one"><a href="#" onclick="location.href='../IN_LOGIN.html'">Login</a></li>
+                <li class="two"><a href="#" onclick="location.href='../IN_JOIN.html'">Join</a></li>         
+              </ul>
+            </nav>
+            <div class="category">
+              <li class="menu"><a href="../IN_SHOP/shopmain.html">SHOP</a>
+                  <ul>
+                      <div id="sub">
+                          <li><a href="../IN_SHOP/shopmain.html">쇼핑하기</a></li>
+                      </div>
+                  </ul>
+              </li>
+            </li>
+            <li class="menu"><a href="./문의게시판main.html">Commnunity</a>
+              <ul>
+                <div id="sub">
+                  <li><a href="./공지사항.html">공지사항</a></li>
+                  <li><a href="./이벤트.html">이벤트</a></li>
+                  <li><a href="./문의게시판main.html">문의게시판</a></li>
+                  <li><a href="./상품후기.html">상품후기</a></li>
+                </div>
+              </ul>
+            </li>
+            </li>
+            <li class="menu"><a href="#" onclick="location.href='../IN_DEAL/DEAL_MAIN.html'">DEAL</a>
+            </li>
+            <li class="menu"><a href="../IN_ROOM/IN_ROOM.html">ROOM</a>
+                  <ul>
+                      <div id="sub">
+                          <li><a href="../IN_ROOM/IN_ROOMA.html">원룸</a></li>
+                          <li><a href="../IN_ROOM/IN_APT.html">아파트</a></li>
+                          <li><a href="../IN_ROOM/IN_BY.html">분양</a></li>
+                      </div>
+                  </ul>
+              </li>
+            </li>
+          </div>
+          </header>
+      </div>
+    <H5 class="page-links">홈 > Commnuity > 문의 게시판 > 글쓰기</H5>
+    <div class="text">
+        <br><br><br>
+    <h2>문의게시판</h2><br>
+    <h5>상품 Q&A입니다.</h5>
+    </div>
+    <br><br>
+    <form action="">
+    <div class="box_title">
+    <pre>제목        </pre>                          
+    <select name="title" id="title">
+        <option value="상품문의">상품문의</option>
+        <option value="배송문의">배송문의</option>
+        <option value="주문/결제">주문/결제</option>
+        <option value="취소/환불">취소/결제</option>
+      </select>
+      <div class="Q">
+      <select name="title" id="title">
+        <option class="box2" value="문의합니다.">1IN에 문의합니다.</option>
+      </select>
+    </div>
+    </div>
+    <div class="box_title">
+    <pre>작성자      </pre>  <input type="text" name="text" id="작성자">
+    </div>
+    <div class="box_title">
+        <pre>이메일      </pre>  
+        <input type="email" id="email" name="email" placeholder="example@example.com" required> 
+        @
+        <select name="email" id="title">
+            <option value="email">gmail.com</option>
+            <option value="email">naver.com</option>
+            <option value="email">nate.com</option>
+            <option value="email">daum.net</option>
+            <option value="email">yahoo.com</option>
+          </select>
+        </div>
+        
+        <textarea class="area" name="" id="" cols="30" rows="10" placeholder="문의 내용을 입력하시오."></textarea>
+        <div class="box_title">
+          <label for="fileInput">첨부파일 1</label>
+          <input type="file" id="fileInput" name="fileInput" class="file-input">
+        </div>
+        <div class="box_title">
+          <label for="fileInput">첨부파일 2</label>
+          <input type="file" id="fileInput" name="fileInput" class="file-input">
+        </div>
+        <div class="box_title">
+          개인정보 수집 <br>
+          및 이용 동의 
+          <textarea readonly name="" id="" cols="30" rows="10" class="readonly">
+  ■ 개인정보의 수집·이용 목적
+
+  서비스 제공 및 계약의 이행, 구매 및 대금결제, 물품배송 또는 청구지 발송, 회원관리 등을 위한 목적
+  
+  
+  ■ 수집하려는 개인정보의 항목
+  
+  이름, 주소, 연락처, 이메일 등
+  
+  
+  
+  ■ 개인정보의 보유 및 이용 기간
+  
+  회사는 개인정보 수집 및 이용목적이 달성된 후에는 예외없이 해당정보를 파기합니다
+        </textarea>
+        </div>
+        <div class= "box_title_2">
+        <label for="">개인정보 수집 및 이용에 동의하십니까? 
+        <input type="radio" name="agreement" value="agree">동의
+        <input type="radio" name="agreement" value="disagree">비동의
+        </label>
+      </div>
+      <br>
+      <div>
+        <button class="button_cancle" onclick="window.location.href='문의게시판main.html'">취소</button>
+        <input type="submit" value="등록" class="button_sub">
+      
+    </div>
+    </form>

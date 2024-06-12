@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOU'RE ALONE?</title>
+
+    <link rel="stylesheet" href="IN_JOIN.css">
+</head>
+<body>
+    <script>
+        function join() {
+            if(window.confirm("회원가입을 하시겠습니까?")) {
+                alert('회원가입 완료');
+                location.href = 'IN_MAIN.html';
+            }
+        }
+    </script>
+    <div>
+        <header class="container">
+            <h1 onclick="location.href='IN_MAIN.html'">1N</h1>
+        </header>
+    </div>
+    <div class="first">
+        <div class="basic1"></div>
+        <div class="basic2">
+            <h2>환영합니다!</h2>
+            <div>
+                <form action="join.php" method="post" target="JOIN">
+                    <table>
+                        <tr>
+                            <td><input id="id" type="text" name="NAME" placeholder="이름"></td>
+                        </tr>
+                        <tr>
+                            <td><input id="id" type="text" name="ID" placeholder="ID"></td>
+                        </tr>
+                        <tr>
+                            <td><input id="password" type="password" name="PASSWORD" placeholder="PASSWORD"></td>
+                        </tr>
+                        <tr>
+                            <td><input id="phone" type="text" name="PHONE" placeholder="핸드폰 번호 '-'빼고 입력"></td>
+                        </tr>
+                        <tr>
+                            <td><input id="birth" type="text" name="BIRTH" placeholder="생년월일 8자리 입력(숫자만 입력)"></td>
+                        </tr>
+                    </table>
+                    <button type="sumbit" onclick="join()">회원가입</button>
+                </form>
+            </div>
+        </div>
+        <div class="basic3"></div>
+    </div>
+</body>
+<iframe name="JOIN" style="display: none;"></iframe>
+</html>

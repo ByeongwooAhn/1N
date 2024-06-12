@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOU'RE ALONE?</title>
+
+    <link rel="stylesheet" href="IN_MYPAGE.css">
+</head>
+<body>
+  <div class="container">
+    <header id="intro">
+        <h1 onclick="location.href='IN_MAIN.html'">1N</h1>
+        <nav>
+          <ul>
+            <li class="one"><a href="#" onclick="location.href='IN_LOGIN.html'">Login</a></li>
+            <li class="two"><a href="#" onclick="location.href='IN_JOIN.html'">Join</a></li>            </ul>
+        </nav>
+        <div class="category">
+            <li class="menu"><a href="./IN_SHOP/shopmain.html">SHOP</a>
+                <ul>
+                    <div id="sub">
+                        <li><a href="./IN_SHOP/shopmain.html">쇼핑하기</a></li>
+                    </div>
+                </ul>
+            </li>
+          </li>
+          <li class="menu"><a href="./문의게시판/문의게시판main.html">Commnunity</a>
+            <ul>
+              <div id="sub">
+                <li><a href="./문의게시판/공지사항.html">공지사항</a></li>
+                <li><a href="./문의게시판/이벤트.html">이벤트</a></li>
+                <li><a href="./문의게시판/문의게시판main.html">문의게시판</a></li>
+                <li><a href="./문의게시판/상품후기.html">상품후기</a></li>
+              </div>
+            </ul>
+          </li>
+          </li>
+          <li class="menu"><a href="#" onclick="location.href='./IN_DEAL/DEAL_MAIN.html'">DEAL</a>
+          </li>
+          <li class="menu"><a href="./IN_ROOM/IN_ROOM.html">ROOM</a>
+                <ul>
+                    <div id="sub">
+                        <li><a href="./IN_ROOM/IN_ROOMA.html">원룸</a></li>
+                        <li><a href="./IN_ROOM/IN_APT.html">아파트</a></li>
+                        <li><a href="./IN_ROOM/IN_BY.html">분양</a></li>
+                    </div>
+                </ul>
+            </li>
+          </li>
+        </div>  
+      </header>
+  </div>
+  <div class="test"></div>
+
+  <aside class="mypage_left">
+    <div class="list_div">
+        <li class="Mypage_list"><a href="#">회원정보 수정</a></li>
+    </div>
+
+    <div class="list_div">
+        <li class="Mypage_list"><a href="#">내 게시글</a>
+            <ul>
+                <div id="Mypage_list_sub">
+                    <li><a href="#">커뮤니티</a></li>
+                    <li><a href="#">중고거래</a></li>
+                </div>
+            </ul>
+        </li>
+    </div>
+
+    <div class="list_div">
+        <li class="Mypage_list"><a href="#">쇼핑</a>
+            <ul>
+                <div id="Mypage_list_sub">
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">구매내역</a></li>
+                    <li><a href="#">배송현황</a></li>
+                </div>
+            </ul>
+        </li>
+    </div>
+  </aside>
+  <main class="mypage_center">
+    <a href="#"><h1>회원정보</h1></a>
+    <article>
+        <div>
+            <table class="member_infor_table">
+                <tr>
+                     <td class="table_border">&nbsp&nbsp이름</td>
+                    <td class="table_size">이름</td>
+                </tr>
+                 <tr>
+                    <td class="table_border">&nbsp&nbsp아이디</td>
+                    <td class="table_size">아이디</td>
+                </tr>
+                <tr>
+                   <td class="table_border">&nbsp&nbsp비밀번호 변경</td>
+                    <td class="table_size"><input class="pw_input" type="password" placeholder="비밀번호 변경"></td>
+                </tr>
+                <tr>
+                    <td class="table_border">&nbsp&nbsp비밀번호 확인</td>
+                    <td class="table_size"><input class="pw_input" type="password" placeholder="비밀번호 확인"></td>
+                </tr>
+                <tr>
+                    <td class="table_border">&nbsp&nbsp핸드폰 번호</td>
+                    <td class="table_size">해드폰 번호</td>
+                </tr>
+                <tr>
+                    <td class="table_border">&nbsp&nbsp생년월일</td>
+                    <td class="table_size">생년월일</td>
+                </tr>
+            </table>
+
+            <button class="save">저장</button>
+        </div>
+    </article>
+  </main>
+
+</body>
+</html>

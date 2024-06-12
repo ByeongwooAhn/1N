@@ -1,0 +1,247 @@
+/* 기본 폼 */
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .test {
+    height: 80px;
+   }
+
+  .container {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: fixed;
+  }
+
+  ol, ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  #intro {
+    width: 100;
+    height: 80px;
+  }
+
+  #intro h1 {
+    font-size: 50px;
+    float: left;
+    width: 100px;
+    height: 80px;
+    color: white;
+    margin-left: 20px;
+    line-height: 80px;
+  }
+
+  #intro h1 a {
+    font-size: 30px;
+  }
+
+  #intro nav ul li {
+   width: 5%;
+   height: 80px;
+   float: right;
+   text-align: center;
+   Line-height: 80px;
+   margin-right: 20px;
+  }
+
+  #intro nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /*---------카테고리 CSS------------*/
+  
+  .category {
+    width: 40%;
+    height: 80px;
+    margin-left: 30%;
+  }
+  
+  .menu {
+    width: 20%;
+    height: 80px;
+    float: left;
+    margin-left: 4%;
+    line-height: 80px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  
+  .menu:hover #sub {
+    display: block;
+  }
+  
+  .menu a {
+    color: inherit;
+  }
+  
+  #sub {
+    margin-top: 0;
+    font-size: 15px;
+    background-color: rgb(252, 252, 252);
+    display: none;
+    
+  }
+  
+  #sub li {
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+   /*---------------------------------------*/
+
+  html, body {
+              margin: 0;
+              padding: 0;
+              height: 1400px;
+              min-width:1600px
+  }
+
+
+#flex-1{
+padding-top:80px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+        height:100%;
+        background-color:white;
+}
+
+#bigbox-1{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width:100%;
+        height:12%;
+}
+
+#bigbox-1-box-1{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height:50%;
+}
+
+#bigbox-1-box-1-img1{
+/*width:;*/
+height:100%;
+}
+
+#bigbox-1-box-1-text1{
+            width:40%;
+            height:50%;
+}
+
+#bigbox-1-box-1-button1{
+            width:40px;
+            height:40px;
+}
+
+#bigbox-1-box-1-img2{
+             width:100%;
+             height:100%;
+}
+
+#bigbox-1-box-2{
+            display:flex;
+            justify-content: center ;
+            align-items: center;
+            width:100%;
+            height:50%;
+}
+
+#bigbox-1-box-2-icondiv{
+                display:flex;
+                justify-content: space-around ;
+                align-items: center;
+                width:70%;
+                height:80%;
+                background-color: white;
+                border: 2px solid black;
+                border-radius:30px;
+}
+
+.bigbox-1-box-2-button{
+                width:40px;
+                height:40px;
+                border-radius:30px;
+                }
+
+                            #bigbox-1-box-2-button1{background-image : url('img/icon/1.png');
+                    background-size: cover;}
+                            #bigbox-1-box-2-button2{background-image : url('img/icon/2.png');
+                    background-size: cover;}
+                            #bigbox-1-box-2-button3{background-image : url('img/icon/3.png');
+                    background-size: cover;}
+                            #bigbox-1-box-2-button4{background-image : url('img/icon/4.png');
+                    background-size: cover;}
+                            #bigbox-1-box-2-button5{background-image : url('img/icon/5.png');
+                    background-size: cover;}
+                            #bigbox-1-box-2-button6{background-image : url('img/icon/6.png');
+                    background-size: cover;}
+                            #bigbox-1-box-2-button7{background-image : url('img/icon/7.png');
+                    background-size: cover;}
+                            #bigbox-1-box-2-button8{background-image : url('img/icon/8.png');
+                    background-size: cover;}
+                            #bigbox-1-box-2-button9{background-image : url('img/icon/9.png');
+                    background-size: cover;}
+                            #bigbox-1-box-2-button10{background-image : url('img/icon/10.png');
+                    background-size: cover;}
+
+#bigbox-2{
+    display:flex;
+    flex-direction:row;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width:80%;
+    height:80%;
+}
+
+#obj{
+    background-image : url('img//small/7.jpg');
+}
+
+.object{
+    width:20%;
+    height:30%;
+    border: 1px solid black;
+    background-image : url('img//small/6.jpg');
+    background-size: cover;
+}
+
+.object-top{
+    width:100%;
+    height:80%;
+}
+
+.object-bottom{
+    display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+            width:100%;
+            height:20%;
+}
+
+/*.object-text{
+
+}*/

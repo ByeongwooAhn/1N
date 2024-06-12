@@ -1,0 +1,428 @@
+/* 기본 폼 IN_FORM.CSS*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .test {
+    height: 80px;
+   }
+  
+  .container {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: fixed;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  #intro {
+    width: 100;
+    height: 80px;
+  }
+  
+  #intro h1 {
+    font-size: 50px;
+    float: left;
+    width: 100px;
+    height: 80px;
+    color: white;
+    margin-left: 20px;
+    line-height: 80px;
+  }
+  
+  #intro h1 a {
+    font-size: 30px;
+  }
+  
+  #intro nav ul li {
+   width: 5%;
+   height: 80px;
+   float: right;
+   text-align: center;
+   Line-height: 80px;
+   margin-right: 20px;
+  }
+  
+  #intro nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /*---------카테고리 CSS------------*/
+  
+  .category {
+    width: 40%;
+    height: 80px;
+    margin-left: 30%;
+  }
+  
+  .menu {
+    width: 20%;
+    height: 80px;
+    float: left;
+    margin-left: 4%;
+    line-height: 80px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  
+  .menu:hover #sub {
+    display: block;
+  }
+  
+  .menu a {
+    color: inherit;
+  }
+  
+  #sub {
+    margin-top: 0;
+    font-size: 15px;
+    background-color: rgb(252, 252, 252);
+    display: none;
+    
+  }
+  
+  #sub li {
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+   /*---------------------------------------*/
+  
+   /*styles.css---------------------------------------*/
+/* 기본 스타일 초기화 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* 흰색 배경색으로 변경 */
+    color: #333;
+}
+
+.page-links {
+    color: black;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h5 {
+    color: gray;
+}
+
+.container_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.menu-item {
+    display: block;
+    padding: 10px;
+    width: 150px;
+    border: solid rgb(235, 232, 232);
+    background-color: white;
+    color: rgb(49, 48, 48);
+    text-decoration: none;
+    border-radius: 1px;
+    transition: background-color 0.3s;
+}
+
+
+
+.board-table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.board-table th,
+.board-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.board-table thead th {
+    background-color: #f3f3f3;
+    color: #555;
+    font-weight: bold;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.board-table tbody tr {
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+
+.board-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.title {
+    width: 100%;
+}
+
+.narrow {
+    width: 10%;
+}
+.num{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.button{
+    padding: 20px;
+    width: 100px;
+    border: solid black;
+    color: white;
+    background-color: black;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s;
+}
+.button_sub{
+    padding: 20px;
+    width: 100px;
+    border: solid black;
+    color: white;
+    background-color: black;
+    margin-bottom: 20px;
+    float: right;
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s;
+}
+.button_cancle{
+    padding: 20px;
+    width: 100px;
+    border: 1px solid #ccc;
+    color: black;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    float: right;
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s;
+}
+.button_search{
+    padding: 10px;
+    width: 100px;
+    border: 1px solid #ccc;
+    color: black;
+    background-color: white;
+    cursor: pointer; /* Adds a pointer cursor on hover */
+}
+.button_cancle:hover,
+.button_search:hover{
+    border: 1px solid black;
+}
+.button_sub:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+    .board-container {
+        overflow-x: auto; /* 가로 스크롤 추가 */
+    }
+
+    .board-table th,
+    .board-table td {
+        white-space: nowrap; /* 줄 바꿈 방지 */
+        overflow: hidden; /* 텍스트 넘침 숨김 */
+        text-overflow: ellipsis; /* 텍스트 넘침시 ...으로 표시 */
+    }
+}
+   /*글쓰기style css---------------------------------------*/
+/* 기본 스타일 초기화 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box_title {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-right: none;
+    border-left:none;
+    border-bottom: none;
+}
+
+.box_title select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.box_title input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.box_title select:focus {
+    border-color: #007BFF;
+}
+.Q select{
+    width: 450px;
+}
+pre{
+    font-size: 15px;
+}
+.area{
+    width: 97%;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: none;
+}
+.area_rivew{
+    width: 97%;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+div.file-input{
+    background-color: white;
+    border: 1px solid #ccc;
+}
+.readonly{
+    width: 800px;
+    height: 150px;
+    border: 1px solid #ccc;
+    background-color: white;
+    text-align: left;
+}
+.box_title_2{
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-right: none;
+    border-left:none;
+}
+.ivent_container {
+    display: flex;
+}
+
+.ivent_item {
+    margin-top: 50px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.ivent_item img {
+    width: 100%; /* 이미지를 컨테이너의 너비에 맞춤 */
+}
+/*리뷰작성 페이지*/
+.reviw-container {
+    display: flex;
+}
+
+.review-board {
+    width: 18%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-board img {
+    max-width: 100%;
+    height: auto;
+}
+
+.star {
+    color:  #ff9800;;
+    font-size: 20px;
+}
+
+strong {
+    display: block;
+    margin-top: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+.star_rivew {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
+}
+.star-rating {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.star_rivew.selected,
+.star_rivew:hover,
+.star_rivew:hover ~ .star_rivew {
+    color: #ff9800;
+}

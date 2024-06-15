@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YOU'RE ALONE?</title>
-
     <link rel="stylesheet" href="IN_LOGIN.css">
 </head>
 <body>
@@ -19,15 +18,17 @@
         <div class="basic2">
             <h2>어서오세요!</h2>
             <div class="textbox">
-                <table>
-                    <tr>
-                        <td><input id="id" type="text" placeholder="ID"></td>
-                    </tr>
-                    <tr>
-                        <td><input id="password" type="password" placeholder="PASSWORD"></td>
-                    </tr>
-                </table>
-                <button onclick="login(id, password)">로그인</button>
+                <form id="loginForm" action="login.php" method="post">
+                    <table>
+                        <tr>
+                            <td><input id="login_id" type="text" placeholder="ID" name="login_id"></td>
+                        </tr>
+                        <tr>
+                            <td><input id="login_password" type="password" placeholder="PASSWORD" name="login_password"></td>
+                        </tr>
+                    </table>
+                    <button type="button" onclick="login()">로그인</button>
+                </form>
             </div>
         </div>
         <div class="basic3"></div>

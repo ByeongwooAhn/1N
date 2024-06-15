@@ -11,45 +11,30 @@ $loginid = isset($data["login_id"]) ? $data["login_id"] : null;
 $loginpassword = isset($data["login_password"]) ? $data["login_password"] : null;
 
 // 데이터 확인 및 처리
-if ($loginid !== null && $loginpassword !== null)
-{
+if ($loginid !== null && $loginpassword !== null) {
     $stmt = mysqli_prepare($con, "SELECT NM, ID, PW FROM user_infor WHERE ID = ? AND PW = ?");
     mysqli_stmt_bind_param($stmt, "ss", $loginid, $loginpassword);
     mysqli_stmt_execute($stmt);
 
     $select_result = mysqli_stmt_get_result($stmt);
 
-    if ($select_result)
-    {
-        if (mysqli_num_rows($select_result) != 0)
-        {
-            $logincheck = 1;
-
+    if ($select_result) {
+        if (mysqli_num_rows($select_result) != 0) {
             $row = mysqli_fetch_array($select_result);
-
             $nm = $row['NM'];
             $id = $row['ID'];
             $pw = $row['PW'];
 
-            echo json_encode(array("logincheck" => $logincheck, "nm" => $id, "id" => $id, "pw" => $pw));
+            echo json_encode(array("nm" => $id, "id" => $id, "pw" => $pw));
+        } else {
+            echo json_encode(array("error" => "회원정보 없음"));
         }
-        else
-        {
-            $logincheck = 0;
-            $error = "회원 정보가 없습니다. 아이디 또는 비밀번호를 확인해주세요.";
-
-            echo json_encode(array("logincheck" => $logincheck, "error" => $error));
-        }
-    }
-    else
-    {
+    } else {
         echo json_encode(array("error" => "접속 실패"));
     }
 
     mysqli_stmt_close($stmt);
-}
-else
-{
+} else {
     echo json_encode(array("error" => "입력값이 없음"));
 }
 

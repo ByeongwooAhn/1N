@@ -10,5 +10,6 @@
         exit();
     }
     echo "접속 성공!";
+    
     mysqli_close($con);
 ?>

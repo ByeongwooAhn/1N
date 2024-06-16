@@ -9,15 +9,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var birth = urlParams.get('birth');
     
     load(nm, id, pw, phone, birth);
-    console.log(nm, id, pw, phone, birth);
+    console.log(nm, id, phone, birth);
 });
 
 function load(nm, id, pw, phone, birth) {
     if(nm != null && id != null && pw != null)
     {
         console.log("받은 데이터:", nm, id, pw, phone, birth);
-        // 여기서 로드 후 실행할 코드를 작성
-    
+
+        user_name.textContent = nm;
+        user_id.textContent = id;
+        user_phone.textContent = phone;
+        user_birth.textContent = birth;
+
         var loginlink = document.getElementById('loginlink');
         var joinlink = document.getElementById('joinlink');
     
@@ -32,7 +36,7 @@ function load(nm, id, pw, phone, birth) {
         loginlink.innerHTML = '<a href="#">로그아웃</a>';
                         
         loginlink.onclick = function() {
-            if (window.confirm("로그아웃 하시겠습니까?"))
+            if (window.confirm("로그아웃을 하시겠습니까?"))
             {
                 alert('로그아웃 완료');
                 id = null;
@@ -48,9 +52,9 @@ function load(nm, id, pw, phone, birth) {
                 location.href = 'IN_MAIN.html';
             }
         };
-
+        
         mainpage.onclick = function() {
             location.href = `IN_MAIN.html?nm=${encodeURIComponent(nm)}&id=${encodeURIComponent(id)}&pw=${encodeURIComponent(pw)}&phone=${encodeURIComponent(phone)}&birth=${encodeURIComponent(birth)}`;
-        };
+        }
     }
 }

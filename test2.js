@@ -1,11 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
-        // 현재 페이지의 query string에서 num1 값을 추출
-        var queryString = window.location.search;
-        var urlParams = new URLSearchParams(queryString);
-        var num1 = urlParams.get('num1');
-        
-        // 받은 num1 값을 출력
-        console.log('받은 num1:', num1);
-        
-        // 여기서 필요한 로직을 추가하여 num1 값을 사용할 수 있습니다.
-    });
+    // 세션 데이터를 가져와서 로드 함수 호출
+    fetch('sessiondata.php')
+    .then(response => response.json())
+    .then(data => {
+        if(data.nm && data.id && data.pw) {
+            load(data.nm, data.id, data.pw);
+        }
+    })
+    .catch(error => console.error('세션 데이터 불러오기 실패:', error));
+});
+
+function load(nm, id, pw) {
+    console.log("받은 데이터:", nm, id, pw);
+    
+    /*var joinlink = document.getElementById('joinlink');
+    var loginlink = document.getElementById('loginlink');
+
+    // 로그인 링크 텍스트 및 링크 경로 변경
+    joinlink.innerHTML = '<a href="#">' + nm + '님 환영합니다!</a>';
+    joinlink.onclick = function() {
+        location.href = '#';  // 변경할 링크 경로
+    };
+
+    // 조인 링크 텍스트 및 링크 경로 변경
+    loginlink.innerHTML = '<a href="#">마이페이지</a>';
+    loginlink.onclick = function() {
+        location.href = 'IN_MYPAGE.html';  // 변경할 링크 경로
+    };*/
+}

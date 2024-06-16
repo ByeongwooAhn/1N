@@ -6,15 +6,18 @@
     <title>YOU'RE ALONE?</title>
 
     <link rel="stylesheet" href="IN_MYPAGE.css">
+    <script src="mypage_load.js"></script>
+    <script src="user_pw_update.js"></script>
 </head>
 <body>
   <div class="container">
     <header id="intro">
-        <h1 onclick="location.href='IN_MAIN.html'">1N</h1>
+        <a id="mainpage" href="#"><h1 onclick="load()">1N</h1></a>
         <nav>
           <ul>
-            <li class="one"><a href="#" onclick="location.href='IN_LOGIN.html'">Login</a></li>
-            <li class="two"><a href="#" onclick="location.href='IN_JOIN.html'">Join</a></li>            </ul>
+            <li id="loginlink" class="one"><a href="#" onclick="location.href='IN_LOGIN.html'">Login</a></li>
+            <li id="joinlink" class="two"><a href="#" onclick="location.href='IN_JOIN.html'">Join</a></li>
+        </ul>
         </nav>
         <div class="category">
             <li class="menu"><a href="./IN_SHOP/shopmain.html">SHOP</a>
@@ -88,31 +91,31 @@
             <table class="member_infor_table">
                 <tr>
                      <td class="table_border">&nbsp&nbsp이름</td>
-                    <td class="table_size">이름</td>
+                    <td id="user_name" class="table_size">이름</td>
                 </tr>
                  <tr>
                     <td class="table_border">&nbsp&nbsp아이디</td>
-                    <td class="table_size">아이디</td>
+                    <td id="user_id" class="table_size">아이디</td>
                 </tr>
                 <tr>
                    <td class="table_border">&nbsp&nbsp비밀번호 변경</td>
-                    <td class="table_size"><input class="pw_input" type="password" placeholder="비밀번호 변경"></td>
+                    <td class="table_size"><input id="change_pw" class="pw_input" type="password" placeholder="비밀번호 변경"></td>
                 </tr>
                 <tr>
                     <td class="table_border">&nbsp&nbsp비밀번호 확인</td>
-                    <td class="table_size"><input class="pw_input" type="password" placeholder="비밀번호 확인"></td>
+                    <td class="table_size"><input id="change_pw_check" class="pw_input" type="password" placeholder="비밀번호 확인"></td>
                 </tr>
                 <tr>
                     <td class="table_border">&nbsp&nbsp핸드폰 번호</td>
-                    <td class="table_size">해드폰 번호</td>
+                    <td id="user_phone" class="table_size">해드폰 번호</td>
                 </tr>
                 <tr>
                     <td class="table_border">&nbsp&nbsp생년월일</td>
-                    <td class="table_size">생년월일</td>
+                    <td id="user_birth" class="table_size">생년월일</td>
                 </tr>
             </table>
 
-            <button class="save">저장</button>
+            <button class="save" onclick="pw_update()">저장</button>
         </div>
     </article>
   </main>

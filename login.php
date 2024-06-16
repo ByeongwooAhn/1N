@@ -13,7 +13,7 @@ $loginpassword = isset($data["login_password"]) ? $data["login_password"] : null
 // 데이터 확인 및 처리
 if ($loginid !== null && $loginpassword !== null)
 {
-    $stmt = mysqli_prepare($con, "SELECT NM, ID, PW FROM user_infor WHERE ID = ? AND PW = ?");
+    $stmt = mysqli_prepare($con, "SELECT * FROM user_infor WHERE ID = ? AND PW = ?");
     mysqli_stmt_bind_param($stmt, "ss", $loginid, $loginpassword);
     mysqli_stmt_execute($stmt);
 
@@ -30,8 +30,10 @@ if ($loginid !== null && $loginpassword !== null)
             $nm = $row['NM'];
             $id = $row['ID'];
             $pw = $row['PW'];
+            $phone = $row['PHONE'];
+            $birth = $row['BIRTH'];
 
-            echo json_encode(array("logincheck" => $logincheck, "nm" => $id, "id" => $id, "pw" => $pw));
+            echo json_encode(array("logincheck" => $logincheck, "nm" => $nm, "id" => $id, "pw" => $pw, "phone" => $phone, "birth" => $birth));
         }
         else
         {

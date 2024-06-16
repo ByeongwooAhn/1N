@@ -17,7 +17,8 @@ function login() {
             if(data.logincheck == 1)
             {
                 alert('로그인 완료');
-                location.href = `IN_MAIN.html?nm=${encodeURIComponent(data.nm)}&id=${encodeURIComponent(data.id)}&pw=${encodeURIComponent(data.pw)}`;
+
+                location.href = `IN_MAIN.html?nm=${encodeURIComponent(data.nm)}&id=${encodeURIComponent(data.id)}&pw=${encodeURIComponent(data.pw)}&phone=${encodeURIComponent(data.phone)}&birth=${encodeURIComponent(data.birth)}`;
             }
             else if(data.logincheck == 0)
             {

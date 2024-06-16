@@ -2,11 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First HTML</title>
-    <script src="test.js"></script>
+    <title>YOU'RE ALONE?</title>
+    <link rel="stylesheet" href="IN_MAIN.css">
+    <script src="load.js"></script>
+    <style>
+        /* 기본 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .shop, .talk, .deal, .room {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn1, .btn2, .btn3, .btn4 {
+            background-color: #686767;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
+            background-color: #555;
+        }
+
+        /* 반응형 스타일 */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <button id="goToSecondPage" onclick="send()">Go to Second Page</button>
+    <div class="container">
+
+        <header id="intro">
+            <a id="mainpage" href="#"><h1 onclick="load()">1N</h1></a>
+
+            <nav>
+                <ul>
+                    <li id="loginlink" class="one"><a href="#" onclick="location.href='IN_LOGIN.html'">Login</a></li>
+                    <li id="joinlink" class="two"><a href="#" onclick="location.href='IN_JOIN.html'">Join</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+    </div>
+
+    <div class="shop">
+        <button class="btn1" onclick="location.href='./IN_SHOP/shopmain.html'"><a class="btn1" href="#">SHOP</a></button>
+    </div>
+
+    <div class="talk">
+        <button class="btn2" onclick="location.href='./문의게시판/문의게시판main.html'"><a class="btn2" href="#">COMMUNITY</a></button>
+    </div>
+
+    <div class="deal">
+        <button class="btn3" onclick="location.href='./IN_DEAL/DEAL_MAIN.html'"><a class="btn3" href="#">DEAL</a></button>
+    </div>
+
+    <div class="room">
+        <button class="btn4" onclick="location.href='./IN_ROOM/IN_ROOM.html'"><a class="btn4" href="#">ROOM</a></button>
+    </div>
 </body>
 </html>

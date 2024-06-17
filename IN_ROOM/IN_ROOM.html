@@ -6,15 +6,16 @@
     <title>YOU'RE ALONE?</title>
 
     <link rel="stylesheet" href="IN_ROOM.css">
+    <script src="room_load.js"></script>
 </head>
 <body>
   <div class="container">
     <header id="intro">
-      <h1 onclick="location.href='../IN_MAIN.html'">1N</h1>
+      <a id="mainpage" href="#"><h1 onclick="room_load()">1N</h1></a>
         <nav>
           <ul>
-            <li class="one"><a href="#" onclick="location.href='../IN_LOGIN.html'">Login</a></li>
-            <li class="two"><a href="#" onclick="location.href='../IN_JOIN.html'">Join</a></li>            
+            <li id="loginlink" class="one"><a href="#" onclick="location.href='../IN_LOGIN.html'">Login</a></li>
+            <li id="joinlink" class="two"><a href="#" onclick="location.href='../IN_JOIN.html'">Join</a></li>           
           </ul>
         </nav>
         <div class="category">
@@ -26,7 +27,7 @@
               </ul>
           </li>
         </li>
-        <li class="menu"><a href="../문의게시판/문의게시판main.html">Commnunity</a>
+        <li class="menu"><a href="../문의게시판/문의게시판main.html">COMMUNITY</a>
           <ul>
             <div id="sub">
               <li><a href="../문의게시판/공지사항.html">공지사항</a></li>
@@ -39,7 +40,7 @@
         </li>
         <li class="menu"><a href="#" onclick="location.href='../IN_DEAL/DEAL_MAIN.html'">DEAL</a>
         </li>
-        <li class="menu"><a href="./IN_ROOM/IN_ROOM.html">ROOM</a>
+        <li class="menu"><a href="./IN_ROOM.html">ROOM</a>
               <ul>
                   <div id="sub">
                       <li><a href="./IN_ROOMA.html">원룸</a></li>
@@ -52,6 +53,9 @@
       </div>
       </header>
   </div>
+
+  <div class="test"></div>
+
   <div class="search_box">
     <form action="/search" method="get">
         <label for="search">검색:</label>

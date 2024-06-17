@@ -4,6 +4,9 @@ function pw_update() {
         var change_pw = document.getElementById("change_pw").value;
         var change_pw_check = document.getElementById("change_pw_check").value;
         console.log(user_id, change_pw, change_pw_check);
+        var num = change_pw != change_pw_check;
+
+        console.log(num);
 
         // AJAX 요청 보내기
         if(change_pw == change_pw_check)

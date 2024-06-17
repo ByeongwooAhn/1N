@@ -44,7 +44,7 @@
   }
   
   #intro nav ul li {
-   width: 5%;
+   width: 10%;
    height: 80px;
    float: right;
    text-align: center;
@@ -58,7 +58,7 @@
     font-weight: bold;
   }
   
-  /*---------카테고리 CSS------------*/
+/*---------카테고리 CSS------------*/
   
   .category {
     width: 40%;
@@ -268,12 +268,6 @@ h5 {
 }
    /*글쓰기style css---------------------------------------*/
 /* 기본 스타일 초기화 */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .box_title {
     background-color: white;
     padding: 20px;

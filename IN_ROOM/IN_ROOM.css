@@ -106,18 +106,12 @@
    /*------------------------------------원룸---*/
 
    body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f4f4f4;
-}
-
-.container {
-    margin-top: 20px;
-    width: 100%;
 }
 
 .containerbox {
